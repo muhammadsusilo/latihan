@@ -1,0 +1,86 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  text-transform: uppercase;
+  transition: all .4s ease;
+}
+nav ul li a:hover {
+  text-decoration: underline greenyellow;
+  background-color: rgb(0, 158, 0);
+  border-radius: 10px;
+  padding: 8px 17px;
+  color: black;
+  transform: translateY(5px);
+}
+.services {
+  position: relative;
+  transition: all .5s ease;
+}
+
+nav .toogle {
+  display: none;
+  transition: all .5s ease;
+}
+
+.toogle.active {
+  display: flex;
+  position: absolute;
+  width: 20rem;
+  top: 100%;
+  left:0;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-self: flex-start;
+  background-color: gray;
+  transition: all .5s linear;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.toogle li {
+  margin: 1rem 0;
+}
+
+.toogle li a {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+
+
+

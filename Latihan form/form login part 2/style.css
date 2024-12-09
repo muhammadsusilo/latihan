@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  color: white;
+  background-color: rgb(27, 27, 27);
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 430px;
+    min-height: 100%;
+    background-color: rgb(219, 142, 0);
+    border-radius:10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 2) ;
+    padding: 30px 40px;
+}
+
+.wrapper p {
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.wrapper h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0 0;
+    font-weight: 100;
+}
+
+.wrapper .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 20px 0  5px;
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 20px;
+}
+.wrapper .input-box input ::placeholder {
+    color: white;
+}
+
+.wrapper .lupa-password {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wrapper .lupa-password a {
+    text-decoration: none;
+}
+.wrapper .lupa-password a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    padding: 7px 13px;
+    font-size: 1rem;
+    margin: 7px 0;
+}
+
+.wrapper .registrasi-link p {
+    text-align: center;
+    font-size: 14px;
+}
+.wrapper .registrasi-link a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper .registrasi-link a:hover {
+    text-decoration: underline;
+}
+

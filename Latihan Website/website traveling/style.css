@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family:'Mukta', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+/* navigation */
+
+.navigation {
+    position: absolute;
+    display: flex;
+    top: 0;
+    height: 0;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    padding: 30px;
+}
+.navigation .logo {
+    margin-top: -20px;
+}
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul li {
+    margin: 0 30px;
+    list-style: none;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/backround.jpg);
+    background-position:bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 110px;
+    color: white;
+    text-align: center;
+   
+}
+.header-content h2 {
+    font-size: 5vmin;
+}
+.line {
+    width: 110px;
+    height: 4px;
+    background-color: yellowgreen;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 8vmin;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background-color: rgb(0, 90, 0);
+    color: greenyellow;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+header .ctn:hover {
+    background-color: rgb(42, 192, 0);
+    color: white;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Section */
+section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    justify-content: space-between;
+    padding: 10px;
+}
+section .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .col img {
+    width: 100%;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+section .row {
+    margin-top: 40px;
+}
+
+.row .col .klik-ctn {
+    width: 30%;
+    padding: 15px 15px;
+    background-color: rgb(0, 90, 0);
+    color: greenyellow;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.col h4 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.col p {
+    margin: 10px auto;
+}
+/* section exploler */
+.explorer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/kelapa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*  Responsive*/
+/* ponsel */
+@media (max-width:700px){
+    .navigation {
+        padding: 0;
+        
+    }
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        color: black;
+    }    
+
+    .navigation .link {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(108, 99, 99);
+        margin-top: -900px;
+    }
+    .menu-btn {
+        margin-top: 0 px;
+    }
+}

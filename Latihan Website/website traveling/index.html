@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELING</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navigation">
+        <h1 class="logo">Adventure Guci</h1>
+        <ul class="link">
+            <li><a href=""></a>Home</li>
+            <li><a href=""></a>About</li>
+            <li><a href=""></a>Service</li>
+            <li><a href=""></a>Galery</li>
+            <li class="ctn"><a href=""></a>Contact</li>
+        </ul>
+        <input type="checkbox" class="menu-btn">
+    </nav>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h2>Traveling In Tegal</h2>
+            <div class="line"></div>
+            <h1>Wonderful Guci</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+       
+    </header>
+
+    <!--Section-->
+    <section class="event">
+        <div class="title">
+            <h1>Guci Event</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/bg-kelapa.jpg" alt="">
+                <h4>Kelapa</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nobis.</p>
+                <a href="#" class="klik-ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="img/kelapa.jpg" alt="">
+                <h4>Buah Kelapa</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nobis.</p>
+                <a href="#" class="klik-ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+       <!-- Section Exploler -->
+        <section class="explorer">
+            <h1>EXPLOLER THE WORLD</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nulla voluptatibus culpa quam rerum obcaecati ut reprehenderit eligendi minus eius.</p>
+            <a href="" class="ctn">Learn More</a>
+        </section>
+
+
+
+
+
+
+
+
+    <script>
+        const menuButton = document.querySelector(".menu-btn");
+        const navlinks = document.querySelector(".link");
+
+        menuButton.addEventListener('click',() =>{
+            navlinks.classList.toggle('menu-btn')
+        })
+    </script>
+</body>
+</html>

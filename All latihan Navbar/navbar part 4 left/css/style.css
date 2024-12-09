@@ -1,0 +1,132 @@
+:root{
+    --white-color:rgb(247, 247, 247);
+    --body-color: rgb(152, 152, 152);
+
+    --first-color: rgb(0, 156, 0);
+    --black-color:rgb(0, 0, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Playpen Sans', 'Merriweather', serif;
+    background-color: var(--white-color);
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+main {
+    margin-inline: 6rem 1rem;
+    padding-block: 2rem;
+}
+
+/* Navigation */
+.nav {
+    width: 72px;
+    height: max-content;
+    position: fixed;
+    inset: 0;
+    margin: auto 0 ;
+}
+
+.nav--list {
+    position: relative;
+    background-color: var(--first-color);
+    padding-block: 70px;
+    border-radius: 0 51px  51px 0;
+    display: grid;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.nav--link {
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background .4s;
+}
+
+.nav--link i {
+    font-size: 1.25rem;
+    color: var(--white-color);
+    transition: color .4s;
+
+}
+
+.nav--name {
+    position: absolute;
+    top: 0;
+    transform: translateX(56px);
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: 6px 16px;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: transform .5s, opacity .5s;
+    opacity: 0;
+}
+
+.nav--link:hover .nav--name{
+    opacity: 1;
+    transform: translateX(48px);
+}
+
+/* Shapes */
+.nav--circle-1,
+.nav--circle-2 {
+    width: 80px;
+    height: 80px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.nav--circle-1 {
+    top: -78px;
+}
+
+.nav--circle-2 {
+    bottom: -78px;
+}
+ 
+.nav--square-1,
+.nav--square-2 {
+    width: 35px;
+    height: 40px;
+    background-color: var(--first-color);
+    position: absolute;
+    left: 0;
+}
+
+
+.nav--square-1 {
+    top: -40px;
+}
+.nav--square-2{
+    bottom: -40px;
+}
+
+
+
+
+
+
+/* Responsive */
+@media(min-height:1024px){
+
+}

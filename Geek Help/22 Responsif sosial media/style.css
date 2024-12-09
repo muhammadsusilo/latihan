@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rgb(41, 41, 41);
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 2rem;
+}
+.sosial-group {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.sosial-container {
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgb(106, 106, 106);
+  padding:2rem 1rem ;
+  margin:1rem ;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(92, 92, 92);
+}
+
+.sosial-container:hover {
+  box-shadow: 0px 0px 10px rgb(74, 74, 74);
+  transform: translateX(5px);
+}
+
+.icon i {
+  font-size: 2rem;
+  border:  1px solid blue ;
+  padding: 10px;
+  color: blue;
+}
+
+.icon-text h3 {
+  margin: 1.5rem 1rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.facebook-co h3,
+.linkedin-co h3 {
+  color: blue;
+}
+.icon .ri-instagram-line {
+  border: 1px solid #f46f30;
+  color: #f46f30;
+}
+
+.instagram-co h3 {
+  color: #f46f30;
+}
+.icon-text p {
+  font-weight: 300;
+  font-size: 1rem;
+}
